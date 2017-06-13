@@ -52,7 +52,7 @@ table {
 }
 
 a {
-    font: 14px Roboto, Arial;
+    font: 14px Roboto;
     color: #000002;
     text-decoration: none;
 }
@@ -463,10 +463,10 @@ input[type="button"] {
     border-left: 1px solid #35363a;
 }
 
-.header .main-nav-list > .current-menu-item,
-.header .main-nav-list > li:hover {
-    border-color: #c80002;
-}
+/*.header .main-nav-list > .current-menu-item,*/
+/*.header .main-nav-list > li:hover {*/
+    /*border-color: #c80002;*/
+/*}*/
 
 .header .main-nav-list > li > a {
     display: block;
@@ -1277,7 +1277,7 @@ input[type="button"] {
     padding: 61px 57px 80px;
     border: 1px solid #e6e7eb;
 
-    margin: -280px auto 100px;
+    margin: -260px auto 100px;
     background: #fff;
     z-index: 1;
 }
@@ -1347,21 +1347,29 @@ input[type="button"] {
     overflow: hidden;
 }
 
-.input-wrap .input-border:before {
-    content: '';
+.input-wrap .wpcf7-form-control-wrap {
+    position: relative;
+    display: block;
+}
 
+.input-wrap .wpcf7-form-control-wrap:before,
+.input-wrap .wpcf7-form-control-wrap:after {
+    content: '';
     position: absolute;
-    top: -1px;
-    bottom: -1px;
+    bottom: 0;
     left: 0;
     right: 0;
-
     display: block;
     width: 100%;
-    height: 4px;
+    height: 2px;
+}
 
+.input-wrap .wpcf7-form-control-wrap:before {
+    background:  rgba(30, 31, 35, 0.2);
+}
+
+.input-wrap .wpcf7-form-control-wrap:after {
     background: #c80002;
-
     -webkit-transition: .4s;
     transition: .4s;
 
@@ -1369,7 +1377,7 @@ input[type="button"] {
     transform: scaleX(0);
 }
 
-.input-style:focus + .input-border:before {
+.input-wrap.active .wpcf7-form-control-wrap:after {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }

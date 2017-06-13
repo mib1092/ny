@@ -7,7 +7,8 @@
     <title>Nyeconic</title>
 
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Roboto+Condensed:300,400,700"
+          rel="stylesheet">
 
     <!--styles-->
     <link rel="stylesheet" href="css/swiper.min.css">
@@ -85,7 +86,8 @@
                             gallery</a></li>
                         <li class="main-nav-item"><a href="projects.html" class="main-nav-link">Current projects</a>
                         </li>
-                        <li class="main-nav-item current-menu-item"><a href="contacts.html" class="main-nav-link">Contact us</a>
+                        <li class="main-nav-item current-menu-item"><a href="contacts.html" class="main-nav-link">Contact
+                            us</a>
                         </li>
                     </ul>
                 </nav>
@@ -132,49 +134,64 @@
                                 <div class="col-5">
                                     <div class="input-wrap">
                                         <label class="input-label" for="name">Name</label>
-                                        <input class="input-style" type="text" id="name">
-                                        <div class="input-border"></div>
+                                        <span class="wpcf7-form-control-wrap your-name">
+                                          <input type="text" name="your-name" value=""
+                                                 class="wpcf7-form-control input-style" id="name"
+                                                 aria-required="true" aria-invalid="false">
+                                        </span>
                                     </div>
                                 </div>
 
                                 <div class="col-5">
                                     <div class="input-wrap">
                                         <label class="input-label" for="company">Company</label>
-                                        <input class="input-style" type="text" id="company">
-                                        <div class="input-border"></div>
+                                        <span class="wpcf7-form-control-wrap your-name">
+                                          <input type="text" name="company" value=""
+                                                 class="wpcf7-form-control input-style" id="company"
+                                                 aria-required="true" aria-invalid="false">
+                                        </span>
                                     </div>
                                 </div>
 
                                 <div class="col-5">
                                     <div class="input-wrap">
                                         <label class="input-label" for="email">Email</label>
-                                        <input class="input-style" type="text" id="email">
-                                        <div class="input-border"></div>
+                                        <span class="wpcf7-form-control-wrap your-name">
+                                          <input type="text" name="email" value=""
+                                                 class="wpcf7-form-control input-style" id="email"
+                                                 aria-required="true" aria-invalid="false">
+                                        </span>
                                     </div>
                                 </div>
 
                                 <div class="col-5">
                                     <div class="input-wrap">
                                         <label class="input-label" for="phone">Phone</label>
-                                        <input class="input-style" type="text" id="phone">
-                                        <div class="input-border"></div>
+                                        <span class="wpcf7-form-control-wrap your-name">
+                                              <input type="text" name="phone" value=""
+                                                     class="wpcf7-form-control input-style" id="phone"
+                                                     aria-required="true" aria-invalid="false">
+                                        </span>
                                     </div>
                                 </div>
 
                                 <div class="col-10">
                                     <div class="input-wrap">
                                         <label class="input-label" for="message">Your Message</label>
-                                        <textarea class="input-style textarea" name="message" id="message" cols="30"
-                                                  rows="10"></textarea>
-                                        <div class="input-border"></div>
+
+                                        <span class="wpcf7-form-control-wrap your-name">
+                                              <textarea class="input-style textarea" name="message" id="message"
+                                                        cols="30"
+                                                        rows="10"></textarea>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="text-center submit-wrap">
-                                <button type="submit" class="btn-danger btn-submit">
-                                    Send
-                                </button>
+                                <input type="submit" value="Send"
+                                       class="wpcf7-form-control wpcf7-submit btn-danger btn-submit"><span
+                                    class="ajax-loader"></span>
                             </div>
                         </form>
                     </div>

@@ -9,4 +9,14 @@ $(document).ready(function () {
     });
 
     $('.header-bottom').affix({offset: {top: 190}});
+
+    // inputs focus effect
+
+    $('.input-style').on('focus', function () {
+        $(this).closest('.input-wrap').addClass('active');
+    });
+
+    $('.input-style').on('blur', function () {
+        $(this).closest('.input-wrap').removeClass('active');
+    });
 });
