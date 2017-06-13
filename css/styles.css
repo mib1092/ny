@@ -88,6 +88,10 @@ input[type="button"] {
     float: right;
 }
 
+.overflow {
+    overflow: hidden;
+}
+
 .bg-dark {
     background: #1e1f23;
 }
@@ -267,6 +271,8 @@ input[type="button"] {
 .header {
     position: relative;
     min-height: 236px;
+    background: #fff;
+    z-index: 5;
 }
 
 .header-top {
@@ -1259,25 +1265,21 @@ input[type="button"] {
 
 /*------------------------CONTACTS PAGE------------------------*/
 .map {
-    height: 560px;
+    margin-top: -200px;
+    height: 760px;
 }
 
 .section.section-contacts {
     position: relative;
-    padding-top: 0;
-    margin-top: -280px;
-    z-index: 1;
-}
-
-.contact-box {
     display: block;
     max-width: 900px;
 
     padding: 61px 57px 80px;
     border: 1px solid #e6e7eb;
 
-    margin: 0 auto;
+    margin: -280px auto 100px;
     background: #fff;
+    z-index: 1;
 }
 
 .contact-box .contacts-list {
