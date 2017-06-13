@@ -357,6 +357,12 @@ input[type="button"] {
     border-left: 1px solid #35363a;
 }
 
+.main-nav-item.active,
+.main-nav-item.current-menu-item,
+.main-nav-item:hover {
+    border-color: #c80002;
+}
+
 .main-nav-link {
     display: block;
     height: 100%;
@@ -366,6 +372,7 @@ input[type="button"] {
     padding: 23px 42px;
     text-transform: uppercase;
     color: #fff;
+    text-align: center;
 }
 
 .main-nav .sub-menu {
@@ -409,6 +416,7 @@ input[type="button"] {
 }
 
 .active .main-nav-link,
+.current-menu-item .main-nav-link,
 .main-nav-link:hover,
 .main-nav-link:focus {
     background: #c80002;
@@ -808,12 +816,13 @@ input[type="button"] {
 .lg-card .unorder-list .link {
     display: block;
     font: 16px Lato;
-    padding: 9px 22px 8px;
+    padding: 8px 22px 10px;
 }
 
 .lg-card .unorder-list .link:hover,
 .lg-card .unorder-list .link:focus {
     background: #f5f6fa;
+    color: #ae0000;
 }
 
 .lg-card .unorder-list .link:before {
@@ -860,9 +869,11 @@ input[type="button"] {
     padding: 0 16px 0 17px;
     text-transform: uppercase;
     color: #fff;
+    text-align: center;
 }
 
 .active .footer-nav-link,
+.current-menu-item .footer-nav-link,
 .footer-nav-link:focus,
 .footer-nav-link:hover {
     color: #a90101;
