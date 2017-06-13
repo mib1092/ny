@@ -8,5 +8,5 @@ $(document).ready(function () {
         prevButton: '.btn-prev',
     });
 
-    $('.header-bottom').affix({offset: {top: 182}});
+    $('.header-bottom').affix({offset: {top: 190}});
 });
