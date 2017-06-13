@@ -182,7 +182,7 @@ input[type="button"] {
     top: 0;
     width: 100%;
     left: 0;
-    right:0;
+    right: 0;
     z-index: 9999;
 }
 
@@ -340,9 +340,11 @@ input[type="button"] {
 
 .main-nav-list {
     display: table;
+    width: 100%;
 }
 
 .main-nav-item {
+    position: relative;
     display: table-cell;
     height: 100%;
     border-right: 1px solid #35363a;
@@ -355,11 +357,6 @@ input[type="button"] {
     border-left: 1px solid #35363a;
 }
 
-.main-nav-item.active,
-.main-nav-item:hover {
-    border-color: #c80002;
-}
-
 .main-nav-link {
     display: block;
     height: 100%;
@@ -369,6 +366,46 @@ input[type="button"] {
     padding: 23px 42px;
     text-transform: uppercase;
     color: #fff;
+}
+
+.main-nav .sub-menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    background: #1e1f23;
+    border-top: 4px solid #c80002;
+
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+
+    z-index: 1;
+}
+
+.main-nav-item:hover > a + .sub-menu {
+    display: block;
+}
+
+.main-nav .sub-menu .sub-menu-item {
+    border-top: 1px solid #35363a;
+}
+
+.main-nav .sub-menu a{
+    display: block;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.main-nav .sub-menu a:hover,
+.main-nav .sub-menu a:focus {
+    color: #c80002;
 }
 
 .active .main-nav-link,
@@ -1548,10 +1585,13 @@ input[type="button"] {
 
 .article-header .img-wrap {
     position: relative;
+    max-height: 527px;
+    overflow: hidden;
 }
 
 .article-header .main-image {
     display: block;
+    width: 100%;
     height: auto;
 }
 
@@ -1580,7 +1620,7 @@ input[type="button"] {
 }
 
 .single-article .main-heading {
-    font:700 76px/1 'Roboto Condensed';
+    font: 700 76px/1 'Roboto Condensed';
     text-transform: uppercase;
     margin-bottom: 3px;
 }
@@ -1619,7 +1659,7 @@ input[type="button"] {
 }
 
 .single-article .main-content p,
-.single-article .main-content blockquote{
+.single-article .main-content blockquote {
     margin-bottom: 34px;
 }
 
@@ -1633,6 +1673,7 @@ input[type="button"] {
     padding: 0;
     font-style: italic;
     color: #808080;
+    margin-bottom: 15px;
 }
 
 .single-article .main-content blockquote p:last-child {
@@ -1643,7 +1684,7 @@ input[type="button"] {
     padding-left: 15px;
 }
 
-.single-article .main-content ol li{
+.single-article .main-content ol li {
     list-style: decimal;
     margin-bottom: 14px;
 }
