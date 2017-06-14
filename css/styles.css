@@ -52,7 +52,7 @@ table {
 }
 
 a {
-    font: 14px Lato, Arial, sans-serif;;
+    font: 14px Lato, Arial, sans-serif;
     color: #000002;
     text-decoration: none;
 }
@@ -241,6 +241,7 @@ input[type="button"] {
     line-height: 1.65;
     padding: 0;
     font-style: italic;
+    font-weight: 300;
     color: #808080;
     margin-bottom: 15px;
 }
@@ -1442,7 +1443,7 @@ input[type="button"] {
 
 .side-nav .side-nav-link {
     display: block;
-    font: 16px 'Lato';
+    font: 700 16px 'Lato';
 
     padding: 10px 10px 12px 0;
     color: #1e1f23;
@@ -1733,6 +1734,7 @@ input[type="button"] {
 
 .gallery-nav .side-nav-link {
     padding: 0;
+    font-weight: 700;
 }
 
 /*----------------------SINGLE PAGE----------------------*/
