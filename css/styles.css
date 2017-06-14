@@ -8,7 +8,7 @@ html, body {
 body {
     padding: 0;
     margin: 0;
-    font: 14px 'Roboto Condensed', Arial, sans-serif;
+    font: 14px 'Lato', Arial, sans-serif;
     line-height: 1.5;
     color: #000002
 }
@@ -28,7 +28,7 @@ header, nav, section, article, aside, footer {
 }
 
 select, input, textarea {
-    font: 14px 'Roboto Condensed', Arial, sans-serif;
+    font: 14px 'Lato', Arial, sans-serif;
     color: #000002;
     vertical-align: middle;
 }
@@ -52,7 +52,7 @@ table {
 }
 
 a {
-    font: 14px 'Roboto Condensed', Arial, sans-serif;
+    font: 14px Lato, Arial, sans-serif;;
     color: #000002;
     text-decoration: none;
 }
@@ -104,6 +104,7 @@ input[type="button"] {
     border: none;
     position: relative;
     background: #c70000;
+    font-weight: 700;
     padding: 18px 43px;
     color: #fff;
 }
@@ -345,7 +346,7 @@ input[type="button"] {
 
 .logo-text {
     display: inline-block;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 22px;
     letter-spacing: .025em;
     text-transform: uppercase;
@@ -410,9 +411,8 @@ input[type="button"] {
 
 .contact-link .contact-label {
     display: block;
-    font-weight: 600;
     color: #000002;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /*------------------------------------MAIN-NAV--------------------------------------*/
@@ -474,7 +474,7 @@ input[type="button"] {
     display: block;
     height: 100%;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.5;
     padding: 23px 42px;
     text-transform: uppercase;
