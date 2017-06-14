@@ -5,18 +5,15 @@ $(document).ready(function () {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         nextButton: '.btn-next',
-        prevButton: '.btn-prev',
+        prevButton: '.btn-prev'
     });
 
     $('.header-bottom').affix({offset: {top: 190}});
 
     // inputs focus effect
-
     $('.input-style').on('focus', function () {
         $(this).closest('.input-wrap').addClass('active');
-    });
-
-    $('.input-style').on('blur', function () {
+    }).on('blur', function () {
         $(this).closest('.input-wrap').removeClass('active');
     });
 });

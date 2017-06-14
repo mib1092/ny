@@ -8,7 +8,7 @@ html, body {
 body {
     padding: 0;
     margin: 0;
-    font: 14px 'Roboto Condensed', Arial;
+    font: 14px 'Roboto Condensed', Arial, sans-serif;
     line-height: 1.5;
     color: #000002
 }
@@ -28,7 +28,7 @@ header, nav, section, article, aside, footer {
 }
 
 select, input, textarea {
-    font: 14px 'Roboto Condensed';
+    font: 14px 'Roboto Condensed', Arial, sans-serif;
     color: #000002;
     vertical-align: middle;
 }
@@ -52,7 +52,7 @@ table {
 }
 
 a {
-    font: 14px 'Roboto Condensed';
+    font: 14px 'Roboto Condensed', Arial, sans-serif;
     color: #000002;
     text-decoration: none;
 }
@@ -207,12 +207,12 @@ input[type="button"] {
 
 .dynamic-content img.alignleft {
     float: left;
-    margin: 4px 27px 35px 0;
+    margin: 4px 27px 27px 0;
 }
 
 .dynamic-content img.alignright {
     float: right;
-    margin: 4px 0 35px 30px;
+    margin: 4px 0 27px 27px;
 }
 
 .dynamic-content img.aligncenter {
@@ -507,7 +507,7 @@ input[type="button"] {
     display: block;
 }
 
-.header .main-nav .sub-menu .sub-menu-item {
+.header .main-nav .sub-menu > li {
     border-top: 1px solid #35363a;
 }
 
@@ -1131,7 +1131,7 @@ input[type="button"] {
     display: block;
     font: 16px 'Roboto Condensed';
     padding-top: 7px;
-    margin: 0 18px;
+    margin: 0 12px 0 5px;
 }
 
 
@@ -1733,9 +1733,10 @@ input[type="button"] {
     width: 100%;
     min-height: 530px;
 
-    background-position: center center;
+    background-position: center;
     -webkit-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .single-article .article-header:before {
@@ -1783,6 +1784,10 @@ input[type="button"] {
 .single-article .main-content p,
 .single-article .main-content blockquote {
     margin-bottom: 34px;
+}
+
+.single-article .main-content blockquote p:not(:last-child) {
+    margin-bottom: 15px;
 }
 
 .single-article .main-content ol {
