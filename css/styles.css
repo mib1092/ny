@@ -8,7 +8,7 @@ html, body {
 body {
     padding: 0;
     margin: 0;
-    font: 14px Roboto, Arial;
+    font: 14px 'Roboto Condensed', Arial;
     line-height: 1.5;
     color: #000002
 }
@@ -28,7 +28,7 @@ header, nav, section, article, aside, footer {
 }
 
 select, input, textarea {
-    font: 14px Roboto, Arial;
+    font: 14px 'Roboto Condensed';
     color: #000002;
     vertical-align: middle;
 }
@@ -52,7 +52,7 @@ table {
 }
 
 a {
-    font: 14px Roboto;
+    font: 14px 'Roboto Condensed';
     color: #000002;
     text-decoration: none;
 }
