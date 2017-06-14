@@ -1,15 +1,14 @@
-@media all and (max-width: 1370px){
+@media all and (max-width: 1370px) {
 
 }
 
-
-@media all and (max-width: 1240px){
+@media all and (max-width: 1240px) {
     .header {
         min-height: 215px;
     }
 
     .container {
-        padding:0 20px;
+        padding: 0 20px;
         max-width: 1160px;
     }
 
@@ -51,8 +50,8 @@
     }
 }
 
-@media all and (max-width: 1160px){
-    .section {
+@media all and (max-width: 1160px) {
+    .content .section:not(.section-contacts) {
         padding: 90px 0;
     }
 
@@ -96,21 +95,46 @@
         width: 80%;
         margin: 0 auto 70px;
     }
+
+    .cards-list .card-desription .card-title {
+        font-size: 18px;
+    }
+
+    .cards-list .card-desription .card-text {
+        font-size: 16px;
+    }
+
+    .form-wrap .form-heading {
+        font-size: 32px;
+    }
+
+    .gallery-item {
+        width: 50%;
+    }
+
+    .single-article .main-heading {
+        font-size: 60px;
+    }
+
+    .single-article .article-header {
+        min-height: 400px;
+    }
 }
 
-@media all and (max-width: 980px){
+@media all and (max-width: 980px) {
+
     .container,
-    .section-about .box{
+    .section-about .box {
         max-width: 767px;
     }
 
-    .section {
+    .content .section:not(.section-contacts) {
         padding: 70px 0;
     }
 
     .section-heading {
         font-size: 34px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .section-heading.border:after {
@@ -122,16 +146,16 @@
         padding-bottom: 30px;
     }
 
-    .header  a {
-        outline: none!important;
+    .header a {
+        outline: none !important;
     }
 
-    .contacts-list {
+    .header .contacts-list {
         clear: both;
         text-align: center;
     }
 
-    .contacts-item {
+    .header .contacts-item {
         display: inline-block;
         float: none;
         text-align: left;
@@ -164,10 +188,10 @@
         transform: translateX(-100%);
 
         -webkit-transition: .5s;
-        -moz-transition: .5s ;
-        -ms-transition: .5s ;
-        -o-transition: .5s ;
-        transition: .5s ;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
     }
 
     .header-bottom.active {
@@ -207,6 +231,7 @@
     }
 
     .header .main-nav .sub-menu {
+        display: none;
         position: relative;
         background-color: transparent;
 
@@ -219,7 +244,11 @@
         transform: translateY(0);
     }
 
-    .main-nav-list  .sub-menu > li {
+    .header .main-nav-list > li:hover > a + .sub-menu {
+        display: none;
+    }
+
+    .main-nav-list .sub-menu > li {
         display: block;
     }
 
@@ -269,9 +298,79 @@
         padding: 30px 20px 35px;
         border: 1px solid #e6e7eb;
     }
+
+    .section-description {
+        padding: 0 20px;
+    }
+
+    .section .section-text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .cards-list .card-item {
+        width: 50%;
+    }
+
+    .cards-list .card-item:nth-child(2n + 1) {
+        clear: both;
+    }
+
+    .cards-list .card-desription-wrap:before {
+        top: -36px;
+        height: 46px;
+    }
+
+    .posts-list .post-heading {
+        font-size: 30px;
+        line-height: 1.5;
+    }
+
+    .posts-list .excerpt {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .posts-list .post-description {
+        padding-left: 30px;
+    }
+
+    .btn-danger {
+        font-size: 14px;
+        padding: 15px 35px;
+    }
+
+    .post-info {
+        font-size: 14px;
+    }
+
+    .posts-list .post-header {
+        margin-bottom: 20px;
+    }
+
+    .side-nav.gallery-nav {
+        width: 190px;
+    }
+
+    .gallery-page .main-content {
+        padding-left: 50px;
+    }
+
+    .single-article .main-heading {
+        font-size: 50px;
+    }
+
+    .single-article .post-info {
+        font: 16px 'Lato';
+    }
+
+    .single-article .main-content,
+    .single-article .main-content blockquote {
+        font-size: 14px;
+    }
 }
 
-@media all and (max-width: 767px){
+@media all and (max-width: 767px) {
     .header {
         min-height: 0;
     }
@@ -318,8 +417,6 @@
         font-size: 19px;
     }
 
-
-
     .footer {
         font-size: 12px;
     }
@@ -328,14 +425,37 @@
         width: 30.5%;
     }
 
-    .footer-nav-list > li > a{
+    .footer-nav-list > li > a {
         font-size: 12px;
         padding: 5px 5px;
     }
+
+    .section .section-description {
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .section-thumbs {
+        width: 100%;
+    }
+
+    .side-nav.gallery-nav {
+        display: none;
+    }
+
+    .gallery-page .main-content {
+        padding-left: 0;
+    }
+
+    .gallery-page .custom-dropdown {
+        display: block;
+    }
 }
 
-@media all and (max-width: 640px){
-    .section {
+@media all and (max-width: 640px) {
+    .content .section:not(.section-contacts) {
         padding: 65px 0;
     }
 
@@ -360,9 +480,61 @@
     .hero-text .hero-text-sub {
         font-size: 37px;
     }
+
+    .posts-list .post-heading {
+        font-size: 26px;
+    }
+
+    .posts-list .post-thumb {
+        float: none;
+        width: 100%;
+        margin: 0 auto 25px;
+    }
+
+    .projects .section-heading {
+        margin-bottom: 45px;
+    }
+
+    .posts-list .post-description {
+        padding-left: 0;
+    }
+
+    .form-wrap .form-heading {
+        font-size: 28px;
+    }
+
+    .section.section-contacts {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .form-wrap .col-5 {
+        width: 100%;
+    }
+
+    .contact-box .contacts-list .contacts-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .single-article .main-heading {
+        font-size: 42px;
+    }
+
+    .single-article .main-content p,
+    .single-article .main-content blockquote {
+        margin-bottom: 20px;
+    }
+
+    .content .dynamic-content img {
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-@media all and (max-width: 480px){
+@media all and (max-width: 480px) {
     .footer-nav-list > li {
         width: 48.5%;
     }
@@ -378,10 +550,21 @@
     .hero-text .hero-text-sub {
         font-size: 26px;
     }
+
+    .btn-danger {
+        font-size: 12px;
+    }
+
+    .single-article .main-heading {
+        font-size: 30px;
+    }
+
+    .single-article .post-info {
+        font-size: 14px;
+    }
 }
 
-
-@media all and (max-width: 420px){
+@media all and (max-width: 420px) {
     .lg-card .icon-contracting {
         width: 85px;
         height: 96px;
@@ -399,9 +582,40 @@
     .hero .swiper-pagination {
         padding: 7px 30px 6px;
     }
+
+    .cards-list .card-item {
+        float: none;
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto 25px;
+    }
+
+    .cards-list .card-desription .card-title {
+        font-size: 22px;
+    }
+
+    .cards-list .card-desription .card-text {
+        font-size: 18px;
+    }
+
+    .section-thumbs .section-img {
+        margin-bottom: 30px;
+    }
+
+    .section .section-text p {
+        line-height: 1.6;
+    }
+
+    .section-heading {
+        font-size: 30px;
+    }
+
+    .single-article .article-header {
+        min-height: 350px;
+    }
 }
 
-@media all and (max-width: 360px){
+@media all and (max-width: 360px) {
     .hero-text {
         font-size: 42px;
         line-height: 1.25;
