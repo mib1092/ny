@@ -362,7 +362,7 @@ input[type="button"] {
 
 .contacts-item {
     float: left;
-    padding-left: 31px;
+    padding-left: 29px;
 }
 
 .contact-link {
@@ -405,12 +405,14 @@ input[type="button"] {
     display: block;
     overflow: hidden;
     text-transform: uppercase;
+    font-family: Lato;
 }
 
 .contact-link .contact-label {
     display: block;
     font-weight: 600;
     color: #000002;
+    font-weight: 600;
 }
 
 /*------------------------------------MAIN-NAV--------------------------------------*/
@@ -478,6 +480,7 @@ input[type="button"] {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
+    font-family: "Lato";
 }
 
 .header .main-nav .sub-menu {
