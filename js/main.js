@@ -16,4 +16,23 @@ $(document).ready(function () {
     }).on('blur', function () {
         $(this).closest('.input-wrap').removeClass('active');
     });
+
+    $('.header .main-nav-list a').click(function (e) {
+        e.preventDefault();
+
+        $('.header .main-nav-list .sub-menu').hide();
+        $(this).siblings('.sub-menu').slideToggle(500);
+    });
+
+    $('.burger').click(function (e) {
+        e.preventDefault();
+
+        $('.header-bottom').addClass('active');
+        $('body').addClass('overflow');
+    });
+
+    $('.close-nav').click(function (e) {
+        $('.header-bottom').removeClass('active');
+        $('body').removeClass('overflow');
+    })
 });
