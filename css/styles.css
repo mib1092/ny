@@ -295,10 +295,6 @@ input[type="button"] {
     z-index: 9999;
 }
 
-.affix .main-nav-link {
-    padding: 15px 42px;
-}
-
 .burger {
     position: relative;
     display: none;
@@ -482,6 +478,10 @@ input[type="button"] {
     color: #fff;
     text-align: center;
     font-family: "Lato";
+}
+
+.affix .main-nav-list > li > a {
+    padding: 15px 42px;
 }
 
 .header .main-nav .sub-menu {
