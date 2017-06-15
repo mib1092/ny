@@ -380,7 +380,7 @@
     }
 
     .gallery-page .main-content {
-        padding-left: 50px;
+        padding-left: 0;
     }
 
     .single-article .main-heading {
@@ -419,6 +419,15 @@
     .pager .next-article:after,
     .pager .prev-article:before {
         vertical-align: middle;
+    }
+
+    .side-nav {
+        width: 230px;
+        padding-right: 10px;
+    }
+
+    .side-nav .side-nav-link {
+        font-size: 14px;
     }
 }
 
@@ -513,6 +522,18 @@
 
     .pager-link.next-article {
         text-align: left;
+    }
+
+    .service-dropdown {
+        display: block;
+    }
+
+    .service-dropdown.custom-dropdown {
+        margin-bottom: 30px;
+    }
+
+    .custom-dropdown .dropdown-value {
+        font-size: 18px;
     }
 }
 
