@@ -1470,7 +1470,7 @@ input[type="button"] {
 .side-nav-link:focus {
     color: #c70000;
     background: #f5f6fa;
-    text-indent: 16px;
+    padding-left: 16px;
 }
 
 .main-content {
@@ -1479,6 +1479,7 @@ input[type="button"] {
 
 .main-content .article-thumb-wrap {
     float: left;
+    width: 40.15%;
 }
 
 .main-content .article-thumb {
@@ -1559,6 +1560,7 @@ input[type="button"] {
 }
 
 .pager-link {
+    position: relative;
     font: 900 17px 'Lato';
     width: 260px;
     padding: 34px 30px 33px;
@@ -1575,10 +1577,18 @@ input[type="button"] {
 
 .pager .next-article {
     text-align: right;
+    padding-right: 50px;
+}
+
+.pager .prev-article {
+    padding-left: 50px;
 }
 
 .pager .next-article:after,
 .pager .prev-article:before {
+    position: absolute;
+    top: 50%;
+    
     content: '';
     display: inline-block;
     width: 0;
@@ -1587,6 +1597,12 @@ input[type="button"] {
     margin-bottom: -3px;
     border-style: solid;
 
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
     -webkit-transition: .35s;
     transition: .35s;
 }
@@ -1595,9 +1611,11 @@ input[type="button"] {
     border-width: 11px 10px 11px 0;
     border-color: transparent #000000 transparent transparent;
     margin-right: 14px;
+    left: 30px;
 }
 
 .pager .next-article:after {
+    right: 30px;
     border-width: 11px 0 11px 10px;
     border-color: transparent transparent transparent #000000;
     margin-left: 15px;
