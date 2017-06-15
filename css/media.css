@@ -153,7 +153,6 @@
 }
 
 @media all and (max-width: 980px) {
-
     .container,
     .section-about .box {
         max-width: 767px;
@@ -434,6 +433,11 @@
 
 @media all and (max-width: 767px) {
     .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
         min-height: 0;
     }
 
