@@ -163,7 +163,8 @@
         padding: 70px 0;
     }
 
-    .section-heading {
+    .section-heading,
+    .main-content .section-heading{
         font-size: 34px;
         margin-bottom: 30px;
     }
@@ -529,11 +530,7 @@
     }
 
     .service-dropdown.custom-dropdown {
-        margin-bottom: 30px;
-    }
-
-    .custom-dropdown .dropdown-value {
-        font-size: 18px;
+        margin-bottom: 40px;
     }
 }
 

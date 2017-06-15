@@ -1844,8 +1844,9 @@ input[type="button"] {
 }
 
 .custom-dropdown .dropdown-section-title {
-    font: 700 16px 'Lato';
+    font: 700 14px 'Lato';
     text-align: center;
+    text-transform: uppercase;
     margin-bottom: 15px;
 }
 
