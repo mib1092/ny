@@ -432,6 +432,10 @@
 }
 
 @media all and (max-width: 767px) {
+    .wrap {
+        padding-top: 60px;
+    }
+
     .header {
         position: fixed;
         top: 0;
