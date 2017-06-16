@@ -453,6 +453,12 @@
         margin-bottom: 0;
     }
 
+    .burger {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
     .header-contacts {
         display: none;
     }
@@ -540,6 +546,15 @@
     .service-dropdown.custom-dropdown {
         margin-bottom: 40px;
     }
+
+    .section-heading.text-center {
+        text-align: left;
+    }
+    .section-heading.text-center:after {
+        left: 0;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
 
 @media all and (max-width: 640px) {
@@ -554,11 +569,7 @@
 
     .logo-wrap {
         width: 100%;
-        max-width: 130px;
-    }
-
-    .burger {
-        top: 8px;
+        max-width: 139px;
     }
 
     .hero-text {
