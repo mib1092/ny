@@ -429,6 +429,10 @@
     .side-nav .side-nav-link {
         font-size: 14px;
     }
+
+    .map + .section.section-contacts {
+        margin-top: -200px;
+    }
 }
 
 @media all and (max-width: 767px) {
@@ -554,6 +558,10 @@
         left: 0;
         -webkit-transform: translateX(0);
         transform: translateX(0);
+    }
+
+    .map + .section.section-contacts {
+        margin-top: -150px;
     }
 }
 
