@@ -440,7 +440,7 @@
 
 @media all and (max-width: 767px) {
     .wrap {
-        padding-top: 60px;
+        padding-top: 96px;
     }
 
     .header {
@@ -448,8 +448,10 @@
         top: 0;
         left: 0;
         right: 0;
-
         min-height: 0;
+    }
+    .admin-bar .header {
+        top: 46px;
     }
 
     .header-top {
@@ -569,6 +571,10 @@
 }
 
 @media all and (max-width: 640px) {
+    .wrap {
+        padding-top: 86px;
+    }
+
     .content .section:not(.section-contacts) {
         padding: 65px 0;
     }
@@ -660,6 +666,15 @@
 
     .gallery-dropdown {
         margin-bottom: 40px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    html.js {
+        margin-top: 0 !important;
+    }
+    .admin-bar .header {
+        top: 0;
     }
 }
 

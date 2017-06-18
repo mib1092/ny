@@ -296,6 +296,10 @@ input[type="button"] {
     z-index: 9999;
 }
 
+.admin-bar .header-bottom.affix {
+    top: 32px;
+}
+
 .burger {
     position: absolute;
     left: 25px;
