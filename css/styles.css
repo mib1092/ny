@@ -416,11 +416,11 @@ input[type="button"] {
 /*------------------------------------MAIN-NAV--------------------------------------*/
 .jumpToContent {
     position: absolute;
+    z-index: 100;
     display: block;
     width: 300px;
     top: 0;
-    left: 0;
-    right: 0;
+    left: 50%;
     margin: 0 auto;
     text-transform: uppercase;
 
@@ -432,16 +432,16 @@ input[type="button"] {
 
     border-radius: 0 0 30px 30px;
 
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
     color: #fff;
 
     background: #1e1f23;
 }
 
 .jumpToContent:focus {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
 }
 
 .main-nav-list {
