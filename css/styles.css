@@ -265,7 +265,7 @@ input[type="button"] {
     flex-direction: column;
 
     min-width: 315px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .container {
