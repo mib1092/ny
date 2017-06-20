@@ -251,8 +251,7 @@ input[type="button"] {
 }
 
 /*----------------------------------------WRAP--------------------------------------*/
-
-.wrap {
+body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -263,6 +262,12 @@ input[type="button"] {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+}
+
+.wrap {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
 
     min-width: 315px;
     overflow: auto;
@@ -550,11 +555,6 @@ input[type="button"] {
 }
 
 /*-------------------------------------CONTENT--------------------------------------*/
-.content {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
-}
 
 .hero {
     max-height: 745px;
