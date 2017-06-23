@@ -208,6 +208,7 @@
 
     .header-bottom {
         position: fixed;
+        z-index: 999;
         top: 0;
         bottom: 0;
         left: 0;
@@ -563,10 +564,10 @@
         margin-bottom: 40px;
     }
 
-    .section-heading.text-center {
+    .section:not(.section-about):not(.section-contacts) .section-heading.text-center {
         text-align: left;
     }
-    .section-heading.text-center:after {
+    .section:not(.section-about):not(.section-contacts) .section-heading.text-center:after {
         left: 0;
         -webkit-transform: translateX(0);
         transform: translateX(0);
@@ -574,6 +575,12 @@
 
     .map + .section.section-contacts {
         margin-top: -150px;
+    }
+    .section.section-contacts {
+        margin-bottom: 70px;
+    }
+    .section.section-contacts:first-child {
+        margin-top: 70px;
     }
 }
 
@@ -684,6 +691,9 @@
     .admin-bar .header {
         top: 0;
     }
+    .admin-bar .header-bottom.affix {
+        top: 0;
+    }
 }
 
 @media all and (max-width: 480px) {
@@ -718,6 +728,15 @@
 
     .services-page .main-content .section-heading{
         padding-bottom: 10px;
+    }
+
+    .wrap-404 {
+        padding: 30px 0 50px;
+        font-size: 50px;
+    }
+    .wrap-404 .error-404 {
+        margin-bottom: -18px;
+        font-size: 140px;
     }
 }
 
@@ -789,6 +808,8 @@
 
     .lg-card .unorder-list .link {
         font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .footer-nav-list > li {

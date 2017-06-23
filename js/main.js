@@ -1,8 +1,8 @@
 jQuery(document).ready(function($) {
 
     // for Hero Homepage slider
-    if ($('.swiper-container').length) {
-        if ($('.swiper-container').hasClass('one')) {
+    if ( $('.swiper-container').length ) {
+        if ( $('.swiper-container').hasClass('one') ) {
             var options = {
                 speed: 400,
                 loop: true,
@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
     }
 
     // for Nav fixing
-    $('.header-bottom').affix({offset: {top: 190}});
+    $('.header-bottom').affix({offset: {top: 178}});
 
     // inputs focus effect
     $('.input-style').on('focus', function () {
