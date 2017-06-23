@@ -585,7 +585,8 @@ body {
     font: 600 138px/1 'Roboto Condensed';
 }
 
-.hero-text .hero-text-sub {
+.hero-text .hero-text-sub,
+.hero-text span {
     display: block;
     font: 300 66px 'Roboto Condensed';
     text-align: center;
@@ -876,13 +877,14 @@ body {
 }
 
 .section-about .lg-card-list {
-    margin-bottom: 15px;
+    margin-bottom: -40px;
     overflow: hidden;
 }
 
 .section-about .lg-card {
     float: left;
     width: 50%;
+    margin: 0 auto 60px;
 }
 
 .section-about .lg-card:nth-child(even) {
@@ -946,12 +948,15 @@ body {
 
 .lg-card .icon {
     display: block;
+    width: 100px;
+    height: 100px;
     margin: 0 auto 40px;
 
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: 100%;
     background-size: 100%;
+    color: #ffffff;
 }
 
 .lg-card .icon-contracting {

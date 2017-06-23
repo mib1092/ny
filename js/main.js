@@ -1,13 +1,29 @@
-$(document).ready(function () {
-    var mySwiper = new Swiper('.swiper-container', {
-        speed: 400,
-        loop: true,
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        nextButton: '.btn-next',
-        prevButton: '.btn-prev'
-    });
+jQuery(document).ready(function($) {
 
+    // for Hero Homepage slider
+    if ($('.swiper-container').length) {
+        if ($('.swiper-container').hasClass('one')) {
+            var options = {
+                speed: 400,
+                loop: true,
+                simulateTouch: false,
+                allowSwipeToPrev: false,
+                allowSwipeToNext: false
+            };
+        } else {
+            var options = {
+                speed: 400,
+                loop: true,
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                nextButton: '.btn-next',
+                prevButton: '.btn-prev'
+            };
+        }
+        var mySwiper = new Swiper('.swiper-container', options);
+    }
+
+    // for Nav fixing
     $('.header-bottom').affix({offset: {top: 190}});
 
     // inputs focus effect
@@ -56,4 +72,5 @@ $(document).ready(function () {
     $('.custom-dropdown').click(function (e) {
         e.stopPropagation();
     });
+
 });
