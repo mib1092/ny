@@ -8,11 +8,13 @@ jQuery(document).ready(function($) {
                 loop: true,
                 simulateTouch: false,
                 allowSwipeToPrev: false,
+                autoHeight: true,
                 allowSwipeToNext: false
             };
         } else {
             var options = {
                 speed: 400,
+                autoHeight: true,
                 loop: true,
                 pagination: '.swiper-pagination',
                 paginationClickable: true,
