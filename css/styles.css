@@ -893,6 +893,7 @@ body {
 
 .section-about .lg-card:nth-child(odd) {
     padding-right: 40px;
+    clear: both;
 }
 
 .section-about .lg-card .card-header {
