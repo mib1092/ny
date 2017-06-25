@@ -137,7 +137,7 @@
         transform: scaleX(1);
     }
 
-    .main-content .article-description {
+    .main-content .article-thumb-wrap + .article-description {
         padding-left: 0;
     }
 
@@ -439,6 +439,10 @@
 
     .map + .section.section-contacts {
         margin-top: -200px;
+    }
+
+    .wp-pagenavi {
+        margin-top: 20px;
     }
 }
 
