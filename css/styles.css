@@ -1721,6 +1721,9 @@ div.wpcf7-response-output {
 }
 
 .gallery-page .main-content {
+    padding-left: 0;
+}
+.gallery-page .side-nav + .main-content {
     padding-left: 77px;
 }
 

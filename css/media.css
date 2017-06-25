@@ -386,7 +386,7 @@
         margin-bottom: 20px;
     }
 
-    .gallery-page .main-content {
+    .gallery-page .side-nav + .main-content {
         padding-left: 0;
     }
 
