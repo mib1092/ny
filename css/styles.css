@@ -1178,7 +1178,7 @@ body {
     margin-left: 0;
 }
 .wp-pagenavi .nextpostslink {
-    margin-left: 10px;
+    margin-left: 3px;
 }
 .wp-pagenavi .extend + .nextpostslink {
     margin-left: 0;
