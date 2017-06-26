@@ -1040,7 +1040,8 @@ body {
 .active .footer-nav-link,
 .footer-nav-list .current-menu-item > a,
 .footer-nav-list > li > a:focus,
-.footer-nav-list > li > a:hover {
+.footer-nav-list > li > a:hover,
+.single-service .footer-nav-list > .menu-item-32 > a {
     color: #a90101;
 }
 
