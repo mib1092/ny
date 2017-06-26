@@ -116,6 +116,12 @@
     .gallery-item {
         width: 50%;
     }
+    .gallery-item:nth-child(3n+1) {
+        clear: none;
+    }
+    .gallery-item:nth-child(2n+1) {
+        clear: both;
+    }
 
     .single-article .main-heading {
         font-size: 60px;

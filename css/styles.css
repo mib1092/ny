@@ -1743,6 +1743,10 @@ div.wpcf7-response-output {
     padding: 10px;
 }
 
+.gallery-item:nth-child(3n+1) {
+    clear: both;
+}
+
 .gallery-item .inner-wrap {
     position: relative;
     font: 15px 'Lato';
@@ -1824,7 +1828,8 @@ div.wpcf7-response-output {
     margin-bottom: 7px;
 }
 
-.gallery-item .gallery-img {
+.gallery-item .gallery-img,
+.gallery-item img {
     display: block;
     width: 100%;
     height: auto;
@@ -2076,4 +2081,33 @@ div.wpcf7-response-output {
 .no-results {
     padding: 10px 0 20px;
     font-size: 1.2rem;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    /* ideally, transition speed should match zoom duration */
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+.popup-title {
+    font-size: 18px;
+    padding-top: 2px;
+    margin-bottom: 6px;
 }
